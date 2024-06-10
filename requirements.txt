@@ -1,0 +1,26 @@
+#generate virtual enivironment using below commands
+
+'''
+python -m venv .venv
+.\.venv\scripts\activate
+
+'''
+
+#install needs for fast api
+
+'''
+pip install fastapi
+pip install fastapi uvicorn
+
+'''
+
+#To see the results execute the below command
+
+
+'''
+uvicorn main:app --reload
+
+'''
+
+
+
