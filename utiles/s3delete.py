@@ -21,6 +21,6 @@ def delete_bucket(bucket_name):
 
 
 if __name__ == '__main__':
-    bucket_name = 'newbucccc'
+    bucket_name = 'bucketname'
     delete_bucket(bucket_name)
 
