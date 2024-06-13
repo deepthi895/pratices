@@ -4,9 +4,9 @@ def empty_bucket(bucket_name):
     s3 = boto3.resource('s3')
     bucket = s3.Bucket(bucket_name)
     
-    # Delete all objects
-    #print(f"Deleting all objects from bucket: {bucket_name}")
-    #bucket.objects.all().delete()
+    # Delete all objects if versioning not enabled
+    print(f"Deleting all objects from bucket: {bucket_name}")
+    bucket.objects.all().delete()
     
     versioning = s3.BucketVersioning(bucket_name)
     if versioning.status == 'Enabled':
