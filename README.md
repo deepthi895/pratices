@@ -1,1 +1,1 @@
-# Fastapi caluculator 
+# pratices
